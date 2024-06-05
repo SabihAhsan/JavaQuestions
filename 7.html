@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let expenses = new Map([
+  ['sun', 3000.0],
+  ['mon', 3000.0],
+  ['tue', 3234.0]
+]);
+
+const targetDay = 'fri';
+const newValue = 5000.0;
+
+if (expenses.has(targetDay)) {
+  expenses.set(targetDay, newValue);
+} else {
+  expenses.set(targetDay, newValue);
+}
+
+for (const [day, amount] of expenses) {
+  console.log(`${day}: ${amount}`);
+}
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const usersEligibility = [
+  { name: 'John', eligible: true },
+  { name: 'Alice', eligible: false },
+  { name: 'Mike', eligible: true },
+  { name: 'Sarah', eligible: true },
+  { name: 'Tom', eligible: false }
+];
+const eligibleUsers = usersEligibility.filter(user => user.eligible);
+
+console.log('Eligible users:');
+eligibleUsers.forEach(user => console.log(user.name));
+
+    </script>
+    
+</body>
+</html>
